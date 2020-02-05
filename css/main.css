@@ -1,0 +1,77 @@
+html, body {
+    padding: 0;
+    margin: 0;    
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: header;
+    border: solid black 1px;
+}
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    border: solid black 1px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    grid-area: footer;
+    border: solid black 1px;
+}
+
+.prodBox {
+    width: 15%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+}
+
+.prodButton {
+    border-radius: 15px;
+    height: 2rem;
+    width: 9rem;
+    
+}
+
+.button {
+    border-radius: 15px;
+    height: 2rem;
+    width: 9rem;
+}
+
+.productImg {
+    width: 100%;
+}
+
+.productInfo {
+    justify-content: center;
+    flex-direction: column;
+}
